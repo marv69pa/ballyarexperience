@@ -100,8 +100,9 @@ model-viewer[ar-tracking="not-tracking"]>#ar-failure {
 
 .arinstruction {
     width: 50px;
-    position: bottom;
-    bottom: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
   }
 
 .progress-bar {
