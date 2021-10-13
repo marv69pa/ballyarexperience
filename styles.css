@@ -70,7 +70,7 @@ model-viewer {
   }
 }
 
-model-viewer>#imgsrc {
+model-viewer>#ar-prompt {
   position: absolute;
   left: 50%;
   bottom: 175px;
