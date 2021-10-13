@@ -99,11 +99,11 @@ model-viewer[ar-tracking="not-tracking"]>#ar-failure {
 }
 
 .arinstruction {
-    width: 100%;
+    width: 200px;
     text-align: center;
     overflow: hidden;
     position: absolute;
-    bottom: 16px;
+    bottom: 5px;
   }
 
 .progress-bar {
