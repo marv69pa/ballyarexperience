@@ -83,7 +83,7 @@ model-viewer[ar-status="session-started"]>#ar-prompt {
 }
 
 model-viewer[ar-status="object-placed"]>#ar-prompt {
-  background-image: url(asset/ARicon.png);
+  background: url(asset/ARicon.png);
   position: absolute;
   left: 50%;
   bottom: 175px;
