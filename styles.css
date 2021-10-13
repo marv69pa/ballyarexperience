@@ -99,7 +99,7 @@ model-viewer[ar-tracking="not-tracking"]>#ar-failure {
 }
 
 .arinstruction {
-    width: 200px;
+    width: 50px;
     position: center;
     bottom: 5px;
   }
