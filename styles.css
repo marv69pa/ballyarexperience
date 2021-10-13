@@ -78,18 +78,14 @@ model-viewer>#imgsrc {
   display: none;
 }
 
-model-viewer[ar-status="session-started"]>#imgsrc {
+model-viewer[ar-status="session-started"]>#ar-prompt {
   display: block;
 }
 
 model-viewer[ar-status="object-placed"]>#imgsrc {
   display: none;
-  background: url(asset/aricon1.png);
+  background-image: url(asset/aricon1.png);
   animation: circle 2s ease-in-out normal;
-}
-
-model-viewer>#imgsrc {
-  animation: circle 4s linear infinite;
 }
 
 model-viewer>#ar-prompt>img {
