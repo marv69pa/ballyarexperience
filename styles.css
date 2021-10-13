@@ -82,12 +82,6 @@ model-viewer[ar-status="session-started"]>#ar-prompt {
   display: block;
 }
 
-model-viewer[ar-status="object-placed"]>#imgsrc {
-  display: none;
-  background-image: url(asset/aricon1.png);
-  animation: circle 2s ease-in-out normal;
-}
-
 model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
 }
