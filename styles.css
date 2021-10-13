@@ -83,10 +83,11 @@ model-viewer[ar-status="session-started"]>#ar-prompt {
 }
 
 model-viewer[ar-status="object-placed"]>#ar-prompt {
-  display: none;
+  display: none+;
   background: url(asset/aricon1.png);
-  animation: elongate 2s infinite ease-in-out alternate;
+  animation: circle 2s ease-in-out normal;
 }
+
 
 model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
