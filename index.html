@@ -45,8 +45,8 @@
     }
 
     #error.hide {
-      opacity: 100;
-      visibility: visible;
+      opacity: 0;
+      visibility: hidden;
       transition: visibility 2s, opacity 1s 1s;
     }
   </style>
@@ -67,7 +67,7 @@
       <div id="ar-prompt">
           <img src="asset/ar_hand_prompt.png">
       </div>
-      <div id="error" class="hide" opacity="0">
+      <div id="error" class="hide">
           <img src="asset/ARInstruction.png" width="150px">
       </div>
     </model-viewer>
