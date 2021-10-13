@@ -98,6 +98,13 @@ model-viewer[ar-tracking="not-tracking"]>#ar-failure {
   display: block;
 }
 
+.arinstruction {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 16px;
+  }
 
 .progress-bar {
   display: block;
