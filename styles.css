@@ -70,7 +70,7 @@ model-viewer {
   }
 }
 
-model-viewer>#ar-prompt {
+model-viewer>#imgsrc {
   position: absolute;
   left: 50%;
   bottom: 175px;
@@ -78,12 +78,12 @@ model-viewer>#ar-prompt {
   display: none;
 }
 
-model-viewer[ar-status="session-started"]>#ar-prompt {
+model-viewer[ar-status="session-started"]>#imgsrc {
   display: block;
 }
 
-model-viewer[ar-status="object-placed"]>#ar-prompt {
-  display: none+;
+model-viewer[ar-status="object-placed"]>#imgsrc {
+  display: none;
   background: url(asset/aricon1.png);
   animation: circle 2s ease-in-out normal;
 }
