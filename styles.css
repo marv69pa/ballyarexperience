@@ -100,7 +100,7 @@ model-viewer[ar-tracking="not-tracking"]>#ar-failure {
 
 .arinstruction {
     width: 50px;
-    position: center;
+    position: bottom;
     bottom: 5px;
   }
 
