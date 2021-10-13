@@ -88,7 +88,7 @@ model-viewer[ar-status="object-placed"]>#imgsrc {
   animation: circle 2s ease-in-out normal;
 }
 
-model-viewer>#imgsrc>img {
+model-viewer>#imgsrc {
   animation: circle 4s linear infinite;
 }
 
