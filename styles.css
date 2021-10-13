@@ -99,10 +99,8 @@ model-viewer[ar-tracking="not-tracking"]>#ar-failure {
 }
 
 .arinstruction {
-    width: 5%;
-    text-align: center;
-    overflow: hidden;
-    position: absolute;
+    width: 200px;
+    position: center;
     bottom: 5px;
   }
 
