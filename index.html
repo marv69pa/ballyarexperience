@@ -1,38 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>&lt;model-viewer&gt; template</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="styles.css" rel="stylesheet">
 
-    <style type="text/css">
-  		.mobileShow {
-  			display: none;
-  		}
+<head>
+  <title>&lt;model-viewer&gt; template</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="styles.css" rel="stylesheet">
 
-  		/* Smartphone Portrait and Landscape */
-  		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  			.mobileShow {
-  				display: inline;
-  			}
-  		}
-  	</style>
-  	<style type="text/css">
-  		.mobileHide {
-  			display: inline;
-  		}
+  <style type="text/css">
+    .mobileShow {
+      display: none;
+    }
 
-  		/* Smartphone Portrait and Landscape */
-  		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  			.mobileHide {
-  				display: none;
-  			}
-  		}
-  	</style>
+    /* Smartphone Portrait and Landscape */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      .mobileShow {
+        display: inline;
+      }
+    }
+  </style>
+  <style type="text/css">
+    .mobileHide {
+      display: inline;
+    }
 
+    /* Smartphone Portrait and Landscape */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      .mobileHide {
+        display: none;
+      }
+    }
+  </style>
+  <style>
+    #error {
+      background-color: #ffffffdd;
+      border-radius: 16px;
+      padding: 16px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      transition: opacity 0.3s;
+    }
 
+    #error.hide {
+      opacity: 100;
+      visibility: visible;
+      transition: visibility 2s, opacity 1s 1s;
+    }
+  </style>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
