@@ -32,24 +32,7 @@
       }
     }
   </style>
-  <style>
-    #error {
-      background-color: #ffffffdd;
-      border-radius: 16px;
-      padding: 16px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      transition: opacity 0.3s;
-    }
 
-    #error.hide {
-      opacity: 0;
-      visibility: hidden;
-      transition: visibility 2s, opacity 1s 1s;
-    }
-  </style>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
@@ -67,9 +50,11 @@
       <div id="ar-prompt">
           <img src="asset/ar_hand_prompt.png">
       </div>
+<!--
       <div id="error" class="hide">
           <img src="asset/ARInstruction.png" width="150px">
       </div>
+-->
     </model-viewer>
 
     <div class="mobileShow">
@@ -81,17 +66,7 @@
   		</picture>
   	</div>
 
-    <script>
-      document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
-        if (event.detail.status === 'failed') {
-          const error = document.querySelector("#error");
-          error.classList.remove('hide');
-          error.addEventListener('transitionend', (event) => {
-            error.classList.add('hide');
-          });
-        }
-      });
-    </script>
+
 
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
